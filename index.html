@@ -218,6 +218,7 @@ body.is-subpage .topbar{background:rgba(255,252,247,.95)}
     <a href="#videos" data-tab="videos">Vídeos</a>
     <a href="#comunidade" data-tab="comunidade">Comunidade</a>
     <a href="#roteiros" data-tab="roteiros">Roteiros</a>
+    <a href="#direcionamento" data-tab="direcionamento">Direcionamento</a>
     <a href="#trafego" data-tab="trafego">Tráfego</a>
     <a href="#checklist" data-tab="checklist">Checklist</a>
     <a href="#cronograma" data-tab="cronograma">Cronograma</a>
@@ -553,6 +554,34 @@ O objetivo nunca foi cumprir um calendário impecável. O objetivo era voltar pa
   </div>
 </section>
 
+
+<section class="section tab-panel" id="direcionamento">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="overline">Captação · Dra. Marcela Teixeira</span>
+        <h2>Direcionamento dos <em>roteiros</em></h2>
+        <div class="divider"></div>
+      </div>
+      <p class="lead">Introdução e desfecho de ciclos. Orientações para garantir que a mensagem transmita a profundidade e o acolhimento do Método 30 Dias.</p>
+    </div>
+    <h3 style="font-size:1.1rem;font-weight:600;margin-bottom:1.2rem;color:var(--gold)">Ambiente e técnica de gravação</h3>
+    <div class="table reveal" style="margin-bottom:2.5rem">
+      <div class="row"><div><strong>Cenário</strong></div><div></div><div>Ambiente limpo e organizado — consultório com fundo desfocado ou escritório aconchegante. Evitar elementos visuais que causem distração.</div></div>
+      <div class="row"><div><strong>Iluminação</strong></div><div></div><div>Priorizar luz natural de frente para o rosto. Luz artificial (ring light) posicionada a 45° para evitar sombras duras e reflexos em óculos.</div></div>
+      <div class="row"><div><strong>Áudio</strong></div><div></div><div>O áudio é mais importante que a imagem. Microfone de lapela bem posicionado (fio escondido) ou microfone direcional próximo. Gravar em silêncio absoluto.</div></div>
+      <div class="row"><div><strong>Enquadramento</strong></div><div></div><div>Plano médio (cintura para cima) ou meio primeiro plano (peito para cima). Câmera traseira do celular na horizontal, exatamente na altura dos olhos.</div></div>
+      <div class="row"><div><strong>Envio</strong></div><div></div><div>Encaminhar sem edição, filtro, ajuste de velocidade, legenda ou tratamento de imagem. O material original preserva a qualidade máxima e garante flexibilidade para a equipe.</div></div>
+    </div>
+    <h3 style="font-size:1.1rem;font-weight:600;margin-bottom:1.2rem;color:var(--gold)">Postura e tom de voz</h3>
+    <div class="grid three" style="margin-bottom:2rem">
+      <div class="card reveal"><h3>Olhar</h3><p>Falar diretamente para a lente da câmera, como se estivesse olhando nos olhos do paciente ou aluno.</p></div>
+      <div class="card reveal"><h3>Tom de voz</h3><p>Ritmo calmo, pausado e reflexivo. Este não é um vídeo de vendas — é um vídeo de mentoria e acolhimento.</p></div>
+      <div class="card reveal"><h3>Linguagem corporal</h3><p>Ombros relaxados. Mãos para enfatizar pontos-chave, sem movimentos bruscos.</p></div>
+    </div>
+  </div>
+</section>
+
 <section class="section tab-panel" id="trafego">
   <div class="container">
     <div class="section-head"><div><span class="overline">Criativos e tráfego</span><h2>Organização da <em>campanha</em></h2><div class="divider"></div></div><p class="lead">A etapa de tráfego deve focar na organização da campanha, distribuição dos criativos por funil e validação da oferta de R$147,00.</p></div>
@@ -623,7 +652,7 @@ function toggleScript(btn){
   else{panel.style.maxHeight=panel.scrollHeight+'px';}
 }
 
-const tabIds=['inicio','estrategia','produto','oferta','funil','videos','comunidade','roteiros','trafego','checklist','cronograma','alertas','encerramento'];
+const tabIds=['inicio','estrategia','produto','oferta','funil','videos','comunidade','roteiros','direcionamento','trafego','checklist','cronograma','alertas','encerramento'];
 function setActiveTab(id, push=true){
   if(!tabIds.includes(id)) id='inicio';
   document.querySelectorAll('.tab-panel').forEach(panel=>panel.classList.toggle('active', panel.id===id));
